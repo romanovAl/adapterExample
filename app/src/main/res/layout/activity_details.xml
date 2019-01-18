@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".DetailsActivity"
+  android:orientation="vertical"
+  android:layout_gravity="center_vertical"
+  >
+
+  <include
+    layout="@layout/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+  </include>
+
+  <androidx.cardview.widget.CardView
+    android:id="@+id/foodDetails"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="6dp"
+    android:elevation="2dp"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/button_background"
+    android:foreground="@drawable/button_foreground"
+    >
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:layout_margin="16dp"
+      >
+
+      <TextView
+        android:id="@+id/detailsFoodName"
+        android:text="name"
+        style="@style/standartTextView"
+        android:gravity="center_horizontal"/>
+
+      <ImageView
+        android:id="@+id/detailsFoodImage"
+        android:layout_width="match_parent"
+        android:layout_height="196dp"/>
+
+      <TextView
+        android:id="@+id/detailsFoodQuantity"
+        style="@style/littleTextView"
+        android:text="quantity"
+        />
+
+      <TextView
+        android:id="@+id/detailsFoodKcal"
+        style="@style/littleTextView"
+        android:text="kCal"
+        android:gravity="end"
+        />
+
+    </LinearLayout>
+  </androidx.cardview.widget.CardView>
+
+</LinearLayout>

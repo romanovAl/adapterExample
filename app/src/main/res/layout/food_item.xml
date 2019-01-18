@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  >
+
+  <androidx.cardview.widget.CardView
+    android:id="@+id/foodCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="6dp"
+    android:elevation="2dp"
+    android:background="@drawable/button_background"
+    android:foreground="@drawable/button_foreground"
+    >
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <ImageView
+        android:id="@+id/foodImage"
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+
+        />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="16dp"
+      android:orientation="vertical">
+
+      <TextView
+        android:id="@+id/cardFoodName"
+        style="@style/standartTextView"
+        android:text="car_name"
+         />
+
+      <TextView
+        android:id="@+id/cardFoodQuantity"
+        style="@style/littleTextView"
+        android:text="food_quantity"
+        />
+
+      <TextView
+        android:id="@+id/cardFoodKiloCalories"
+        style="@style/littleTextView"
+        android:text="kilo_calories"
+        android:gravity="end"/>
+
+    </LinearLayout>
+    </LinearLayout>
+
+  </androidx.cardview.widget.CardView>
+
+</LinearLayout>
